@@ -6,3 +6,18 @@ body{font-size:1rem}a{text-underline-offset:3px}.icon{width:20px;height:20px;fil
 @media(max-width:767px){.topbar{height:auto;min-height:76px;padding:16px 20px;gap:12px;flex-wrap:wrap}.brand{width:auto;padding:0}.brand img{width:158px}.portal-name{font-size:.875rem;margin-left:auto}.portal-label{display:none}.header-account{width:100%;margin:0;padding-top:12px;border-top:1px solid var(--line)}.header-account>div{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.header-account small{margin:0}.avatar{width:30px;height:30px;font-size:.75rem}.app-shell{display:block}.sidebar{width:100%;padding:10px 14px;border-right:0;border-bottom:1px solid var(--line)}.nav-heading,.sidebar-bottom{display:none}.sidebar .nav{flex-direction:row!important;flex-wrap:nowrap;overflow-x:auto;gap:4px;padding:3px 2px}.sidebar .nav-link{white-space:nowrap;font-size:.875rem;padding:10px 12px;gap:8px}.sidebar .nav-link.active{box-shadow:inset 0 -2px var(--red)}.sidebar .nav-link .icon{width:17px;height:17px}.main-content{padding:24px 18px 0}.page-heading{align-items:flex-start;gap:8px;margin-bottom:20px;flex-wrap:wrap}h1{font-size:1.625rem}.demo-tag{margin-top:8px;font-size:.75rem}.welcome{padding:25px 22px;margin-bottom:22px}.welcome h2{font-size:1.875rem}.welcome p{max-width:270px;font-size:.9375rem}.mesh{width:55%;right:-60px;opacity:.23}.member-label{font-size:.75rem;gap:7px}.card-header{padding:17px 18px}.card-body{padding:20px 18px}.card-header h2{font-size:.9375rem;gap:9px}.subtle-label{font-size:.75rem}.amount{font-size:2.3rem}.payment-summary{gap:12px}.due strong{font-size:1rem}.due small{max-width:125px;display:block}.field-label{font-size:.8125rem}.data-list>div{font-size:.8125rem;gap:10px}.page-footer{flex-direction:column;gap:8px;padding:24px 0}.network-grid dd{font-size:.875rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 :root{--bs-link-color-rgb:182,0,0;--bs-link-hover-color-rgb:137,0,0}
+
+/* QR retains its white quiet zone; payment fields remain available as text. */
+.payment-data{display:grid;grid-template-columns:minmax(0,1fr) 164px;gap:20px;align-items:start}
+.payment-info{min-width:0}
+.payment-info .payment-summary{align-items:flex-start}
+.payment-info .due{flex-shrink:0}
+.payment-qr{margin:0;text-align:center}
+.payment-qr img{display:block;width:164px;height:164px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.payment-qr figcaption strong{display:block;font-size:.875rem;margin-top:6px}
+@media(max-width:575px),(min-width:1200px) and (max-width:1399px){
+  .payment-data{grid-template-columns:minmax(0,1fr)}
+  .payment-qr{display:flex;align-items:center;gap:16px;text-align:left}
+  .payment-qr img{width:156px;height:156px}
+  .payment-qr figcaption{min-width:0}
+}

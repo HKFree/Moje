@@ -1,6 +1,6 @@
 # moje.hkfree.org
 
-Statický návrh samoobslužného portálu hkfree.org v Bootstrapu. Obsahuje fiktivní data; přihlášení, změna hesla a PDF doklady zatím nejsou napojené.
+Statický návrh samoobslužného portálu hkfree.org v Bootstrapu. Obsahuje platební QR a fiktivní data; přihlášení, změna hesla a PDF doklady zatím nejsou napojené.
 
 Spuštění z kořene projektu (bez instalace a sestavení):
 

@@ -6,7 +6,7 @@ Self-service portál pro uživatele a členy hkfree.org na doméně moje.hkfree.
 ## Požadované funkce
 Po přihlášení uživatel uvidí:
 - Osobní údaje: jméno, příjmení, adresu, telefon a e-mail. Prozatím pouze kontrola/zobrazení; možnost editace nebyla zadána.
-- Platební údaje: číslo účtu, variabilní symbol, částku a splatnost.
+- Platební údaje: číslo účtu, variabilní symbol, částku a splatnost, včetně platebního QR kódu.
 - Parametry připojení: IP adresu, výchozí bránu, masku sítě a DNS servery.
 - Odkazy na vygenerované daňové doklady.
 - Odkaz na změnu hesla.
@@ -19,6 +19,8 @@ Po přihlášení uživatel uvidí:
 - Odkazy na doklady vedou na HTML ukázku; dialog změny hesla má neaktivní formulář a vysvětlení.
 - Vzhled navazuje na https://druzstvo.hkfree.org a zdrojáky /root/hkfree_druzstvo: původní logo, červená #cc0000, antracit #191c22, bílá a světle šedé plochy. Ovládání a rozložení využívá Bootstrap.
 - Lokální assety, bez nutnosti externí CDN při prohlížení.
+- Platební QR používá formát QR Platba (SPAYD), odpovídá zobrazenému ukázkovému účtu, částce, VS, splatnosti a zprávě. Je lokálně uložený; upozornění na ukázková data je společné pro celou platební kartu. Pod QR je pouze popisek „QR platba“, bez odkazu ke stažení. Splatnost je vedle částky, mezi částkou a QR kódem; QR je napravo od celého bloku částky, splatnosti a platebních údajů (na úzkých displejích pod ním). Po změně platebních údajů je nutné obrázek přegenerovat pomocí scripts/generate-payment-qr.py (vývojová závislost qrcode[pil], běh webu ji nepotřebuje).
+- Specifikace QR: https://qr-platba.cz/pro-vyvojare/specifikace-formatu/.
 - Přístupné názvy, ovládání klávesnicí, viditelný focus a čitelnost na mobilu.
 - Vývojový HTTP server na dostupném rozhraní 192.168.x.x a náhodném volném portu.
 

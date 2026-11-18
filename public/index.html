@@ -55,8 +55,17 @@
       <div class="col-xl-7">
         <section id="platby" class="card payment-card h-100" aria-labelledby="payment-title">
           <div class="card-header"><h2 id="payment-title"><span class="section-icon"><svg class="icon"><use href="#wallet"/></svg></span>Platební údaje</h2><span class="subtle-label">Prosinec 2026</span></div>
-          <div class="card-body"><div class="payment-summary"><div><span class="field-label">Měsíční platba za internet</span><div class="amount">290 <span>Kč</span></div></div><div class="due"><span class="field-label">Splatnost</span><strong>25. 11. 2026</strong><small>Platba na následující měsíc</small></div></div>
-            <dl class="data-list payment-details"><div><dt>Číslo účtu</dt><dd class="mono">123456789 / 2010</dd></div><div><dt>Variabilní symbol</dt><dd class="mono">12345</dd></div><div><dt>Zpráva pro příjemce</dt><dd>Jan Novák · 12345</dd></div></dl>
+          <div class="card-body">
+            <div class="payment-data">
+              <div class="payment-info">
+                <div class="payment-summary"><div><span class="field-label">Měsíční platba za internet</span><div class="amount">290 <span>Kč</span></div></div><div class="due"><span class="field-label">Splatnost</span><strong><time datetime="2026-11-25">25. 11. 2026</time></strong></div></div>
+                <dl class="data-list payment-details"><div><dt>Číslo účtu</dt><dd class="mono">123456789 / 2010</dd></div><div><dt>Variabilní symbol</dt><dd class="mono">12345</dd></div><div><dt>Zpráva pro příjemce</dt><dd>Jan Novák · 12345</dd></div></dl>
+              </div>
+              <figure class="payment-qr" aria-labelledby="qr-caption">
+                <img src="assets/payment-qr.png" width="164" height="164" alt="QR platba: ukázkový účet 123456789/2010, 290 Kč, variabilní symbol 12345">
+                <figcaption id="qr-caption"><strong>QR platba</strong></figcaption>
+              </figure>
+            </div>
             <div class="payment-note"><svg class="icon"><use href="#help"/></svg><p>Pro pravidelné platby můžete využít trvalý příkaz.<br><strong>Ukázkové údaje — nepoužívejte k platbě.</strong></p></div>
           </div>
         </section>
