@@ -26,6 +26,7 @@ Po přihlášení uživatel uvidí:
 
 ## Rozhodnutí pro první návrh
 - Jeden přehled se sekcemi a boční navigací; mobilní navigace se vodorovně posouvá.
+- Bez uvítacího pruhu: karty s údaji následují přímo po nadpisu přehledu, aby se lépe využila výška obrazovky.
 - Platba je v přehledu nejvýraznější, vedle osobních údajů; níže připojení a doklady.
 - Částka 290 Kč vychází z veřejného webu, ale i ta je v návrhu pouze ukázková.
 - Příští období je prosinec 2026, ukázková splatnost 25. listopadu předem.
